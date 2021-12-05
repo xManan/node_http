@@ -16,4 +16,8 @@ server.on('request', (req,  res)=>{
 		res.write('REQ')
 		res.end()
 	}
+	else if(req.url === 'new'){
+		res.write('NEW')
+		res.end()
+	}
 })
